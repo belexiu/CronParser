@@ -12,7 +12,7 @@ namespace CronParser
         {
             if (args.Length != 1)
             {
-                Console.WriteLine("error: program should one argument ( = cron expression)");
+                Console.WriteLine("error: program should have one string argument that contains the cron expressions and the command to run");
                 return;
             }
             
