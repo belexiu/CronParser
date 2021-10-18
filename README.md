@@ -4,7 +4,11 @@ It accespts only the standard cron format with five time fields (minute, hour, d
 The program does not handle special time string such as "@yearly". The input should be provided on a single line.
 
 ## Run
-To run the application and pass a cron string execute the following command inside the folder containing the CronParser project.
+To run the application and pass a cron string execute the following command inside root folder.
+```
+dotnet run --project CronParser -- "*/15 0 1,15 * 1-5 /usr/bin/find"
+```
+Or the next one inside the `CrontParser` folder.
 ```
 dotnet run -- "*/15 0 1,15 * 1-5 /usr/bin/find"
 ```
